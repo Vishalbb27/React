@@ -56,26 +56,23 @@ const {
 } = manager;
 console.log(managerName, reportee1, reportee2);
 
-function userid({id}){
-    return id;
+function userid({ id }) {
+  return id;
 }
 
-function whois({displayName,fullName:{firstName: name}}){
-    console.log(`${displayName} is ${name}`);
+function whois({ displayName, fullName: { firstName: name } }) {
+  console.log(`${displayName} is ${name}`);
 }
 
 const user = {
-    id: 42,
-    displayName: "jdoe",
-    fullName: {
-        firstName: "John",
-        lastName: "Doe"
-    }
+  id: 42,
+  displayName: "jdoe",
+  fullName: {
+    firstName: "John",
+    lastName: "Doe",
+  },
 };
 
-id =userid(user);//destructor object as parameter
+id = userid(user); //destructor object as parameter
 console.log(id);
 whois(user);
-
-
-
