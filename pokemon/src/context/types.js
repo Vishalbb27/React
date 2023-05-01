@@ -1,0 +1,6 @@
+export const SEARCH_POKEMON = "SEARCH_POKEMON";
+export const GET_POKEMON = "GET_POKEMON";
+export const GET_POKEMONS = "GET_POKEMONS";
+export const SET_TOTAL_PAGES = "SET_TOTAL_PAGES";
+export const SET_PAGE = "SET_PAGE";
+export const CLEAR_POKEMONS = "CLEAR_POKEMONS";

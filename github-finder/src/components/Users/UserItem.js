@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const UserItem = ({ user: { login, avatar_url, html_url } }) => {
   const handleClick = () => {
-    console.log("clicked")
-  prompt("Enter your name", "Harry Potter");
+    console.log("clicked");
+    prompt("Enter your name", "Harry Potter");
     const data = login;
     window.location.href = `/user?data=${data}`;
-  }
-  console.log(login)
+  };
+  console.log(login);
 
   return (
     <div className="card text-center">
