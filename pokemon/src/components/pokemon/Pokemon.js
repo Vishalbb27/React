@@ -5,9 +5,9 @@ import PokemonContext from "../../context/pokemon/pokemonContext";
 const Pokemon = () => {
   const pokemonContext = useContext(PokemonContext);
   const { getPokemon, pokemon } = pokemonContext;
-  const { name, height, weight, abilities, sprites, stats } = pokemon;
+  const { name, height, weight, abilities, sprites, stats, types } = pokemon;
   const { front_default } = sprites || {};
-  const { hp, attack, defense, speed } = stats || {};
+
   useEffect(() => {
     const search = window.location.search;
     const params = new URLSearchParams(search);
@@ -33,7 +33,14 @@ const Pokemon = () => {
                   alt={name}
                   style={{ width: "200px" }}
                 />
-                {/* <h5 className="text-center my-3">Electric-type Pokemon</h5> */}
+
+                <h5 className="text-center my-3">
+                  <strong>TYPE :</strong>
+                  {types &&
+                    types.map((type) => (
+                      <span> {type.type.name.toUpperCase()} </span>
+                    ))}
+                </h5>
               </div>
               <div className="card-body">
                 <h3 className="card-title text-center text-uppercase mb-4">
@@ -41,7 +48,9 @@ const Pokemon = () => {
                 </h3>
                 <ul className="list-unstyled text-center">
                   {abilities &&
-                    abilities.map((ability) => <li>{ability.ability.name}</li>)}
+                    abilities.map((ability) => (
+                      <li>{ability.ability.name.toUpperCase()}</li>
+                    ))}
                 </ul>
                 <h3 className="card-title text-center text-uppercase mt-4 mb-3">
                   Stats
@@ -53,7 +62,7 @@ const Pokemon = () => {
                       <div className="col-md-4">
                         <div>
                           <p className="text-center font-weight-bold">
-                            {stat.stat.name}
+                            {stat.stat.name.toUpperCase()}
                           </p>
 
                           <div className="progress">
