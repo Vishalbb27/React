@@ -33,7 +33,7 @@ const PokemonItem = ({ pokemon: { name, url } }) => {
               <div className="row">
                 <div className="col">
                   <img src={front_default} alt={name} />
-                  <h2>{name.toUpperCase()}</h2>
+                  <h2 id="name">{name.toUpperCase()}</h2>
                   <a href="#" className="btn btn-primary" onClick={handleClick}>
                     More Info
                   </a>
