@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the world cup winning team in 2022?",
+      "answer": "argentina",
+      "options": [
+        {
+          "id" :1,
+          "option": "argentina"
+        },
+        {
+          "id" :2,
+          "option": "brazil"
+        },
+        {
+          "id" :3,
+          "option": "france"
+        },
+        {
+          "id":4,
+          "option": "netherland"
+        }
+      ]
+    }
+    
+  ]
+}

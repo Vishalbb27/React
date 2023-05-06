@@ -15,12 +15,12 @@ export default (state, action) => {
         pokemons: action.payload,
         loading: false,
       };
-      case CLEAR_POKEMONS:
-        return {
-          ...state,
-          pokemons: {},
-          clear : false,
-        };
+    case CLEAR_POKEMONS:
+      return {
+        ...state,
+        pokemons: {},
+        clear: false,
+      };
     case GET_POKEMON:
       return {
         ...state,
@@ -41,7 +41,7 @@ export default (state, action) => {
       return {
         ...state,
         pokemon: action.payload,
-        clear : true,
+        clear: true,
       };
     default:
       return state;
