@@ -1,0 +1,133 @@
+{
+  "questions" : [
+    {
+      "question" : "What is the capital of France?",
+      "answers" : [
+        {
+          "answer" : "Paris",
+          "correct" : true
+        },
+        {
+          "answer" : "London",
+          "correct" : false
+        },
+        {
+          "answer" : "New York",
+          "correct" : false
+        },
+        {
+          "answer" : "Tokyo",
+          "correct" : false
+        }
+      ]
+    },
+    {
+      "question" : "What is the capital of Germany?",
+      "answers" : [
+        {
+          "answer" : "Paris",
+          "correct" : false
+        },
+        {
+          "answer" : "London",
+          "correct" : false
+        },
+        {
+          "answer" : "Berlin",
+          "correct" : true
+        },
+        {
+          "answer" : "Tokyo",
+          "correct" : false
+        }
+      ]
+    },
+    {
+      "question" : "What is the capital of Japan?",
+      "answers" : [
+        {
+          "answer" : "Paris",
+          "correct" : false
+        },
+        {
+          "answer" : "London",
+          "correct" : false
+        },
+        {
+          "answer" : "New York",
+          "correct" : false
+        },
+        {
+          "answer" : "Tokyo",
+          "correct" : true
+        }
+      ]
+    },
+    {
+      "question" : "What is the capital of the United Kingdom?",
+      "answers" : [
+        {
+          "answer" : "Paris",
+          "correct" : false
+        },
+        {
+          "answer" : "London",
+          "correct" : true
+        },
+        {
+          "answer" : "New York",
+          "correct" : false
+        },
+        {
+          "answer" : "Tokyo",
+          "correct" : false
+        }
+      ]
+    },
+
+    {
+       
+      "question" : "What is the capital of the United States?",
+      "answers" : [
+        {
+          "answer" : "Paris",
+          "correct" : false
+        },
+        {
+          "answer" : "London",
+          "correct" : false
+        },
+        {
+          "answer" : "New York",
+          "correct" : false
+        },
+        {
+          "answer" : "Washington DC",
+          "correct" : true
+        }
+      ]
+    },
+    {
+      "question": "What is the capital of India?",
+      "answers": [
+        {
+          "answer": "Paris",
+          "correct": false
+        },
+        {
+          "answer": "London",
+          "correct": false
+        },
+        {
+          "answer": "Delhi",
+          "correct": true
+        },
+        {
+          "answer": "Tokyo",
+          "correct": false
+        }
+      ]
+    
+    }
+  ]
+}
