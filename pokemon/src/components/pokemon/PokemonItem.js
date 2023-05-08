@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import PokemonContext from "../../context/pokemon/pokemonContext";
@@ -30,17 +31,10 @@ const PokemonItem = ({ pokemon: { name, url } }) => {
         <div className="col">
           {
             <div className="pokemon-card">
-<<<<<<< HEAD
-              <img src={front_default} alt={name} />
-              <h2>{name.toUpperCase()}</h2>
-              <a href="#" className="btn btn-primary" onClick={handleClick}>
-                More Info
-              </a>
-=======
               <div className="row">
                 <div className="col">
                   <img src={front_default} alt={name} />
-                  <h2 id="name">{name.toUpperCase()}</h2>
+                  <h2>{name.toUpperCase()}</h2>
                   <a href="#" className="btn btn-primary" onClick={handleClick}>
                     More Info
                   </a>
@@ -50,7 +44,6 @@ const PokemonItem = ({ pokemon: { name, url } }) => {
                   <h5>Height : {height}m</h5>
                 </div>
               </div>
->>>>>>> 9543f33b9ef74af8e0ae694e0c0fc286d816c561
             </div>
           }
         </div>

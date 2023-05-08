@@ -7,12 +7,7 @@ const Pokemon = () => {
   const { getPokemon, pokemon } = pokemonContext;
   const { name, height, weight, abilities, sprites, stats, types } = pokemon;
   const { front_default } = sprites || {};
-<<<<<<< HEAD
-  const { hp, attack, defense, speed } = stats || {};
-  
-=======
 
->>>>>>> 9543f33b9ef74af8e0ae694e0c0fc286d816c561
   useEffect(() => {
     const search = window.location.search;
     const params = new URLSearchParams(search);
@@ -38,15 +33,6 @@ const Pokemon = () => {
                   alt={name}
                   style={{ width: "200px" }}
                 />
-<<<<<<< HEAD
-                <h5 className="text-center my-3"><strong>TYPE :</strong>{
-                  types && types.map((type) => (
-                    <span > {type.type.name.toUpperCase()} </span>
-                  ))
-                }
-                </h5>
-                
-=======
 
                 <h5 className="text-center my-3">
                   <strong>TYPE :</strong>
@@ -55,7 +41,6 @@ const Pokemon = () => {
                       <span> {type.type.name.toUpperCase()} </span>
                     ))}
                 </h5>
->>>>>>> 9543f33b9ef74af8e0ae694e0c0fc286d816c561
               </div>
               <div className="card-body">
                 <h3 className="card-title text-center text-uppercase mb-4">
@@ -63,13 +48,9 @@ const Pokemon = () => {
                 </h3>
                 <ul className="list-unstyled text-center">
                   {abilities &&
-<<<<<<< HEAD
-                    abilities.map((ability) => <li>{ability.ability.name.toUpperCase()}</li>)}
-=======
                     abilities.map((ability) => (
                       <li>{ability.ability.name.toUpperCase()}</li>
                     ))}
->>>>>>> 9543f33b9ef74af8e0ae694e0c0fc286d816c561
                 </ul>
                 <h3 className="card-title text-center text-uppercase mt-4 mb-3">
                   Stats
@@ -131,10 +112,4 @@ const Pokemon = () => {
 
 export default Pokemon;
 
-{
-  /* 
 
-
-
-   */
-}
